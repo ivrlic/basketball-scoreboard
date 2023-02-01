@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basketball Scoreboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mini-container">
+            <h1 id="title-home">HOME</h1>
+            <div class="score-container" id="score-container-home">
+                <h2 id="score-home">0</h2>
+            </div>
+            <div class="add-btn-container">
+                <button class="add-btn" onclick="add(scoreHome, 1)">+1</button>
+                <button class="add-btn" onclick="add(scoreHome, 2)">+2</button>
+                <button class="add-btn" onclick="add(scoreHome, 3)">+3</button>
+            </div>
+        </div>
+
+        <div class="mini-container">
+            <h1 id="title-guest">GUEST</h1>
+            <div class="score-container" id="score-container-guest">
+                <h2 id="score-guest">0</h2>
+            </div>
+            <div class="add-btn-container">
+                <button class="add-btn" onclick="add(scoreGuest, 1)">+1</button>
+                <button class="add-btn" onclick="add(scoreGuest, 2)">+2</button>
+                <button class="add-btn" onclick="add(scoreGuest, 3)">+3</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timer-container">
+        <div id="time-countdown">10:00</div>
+        <button class="timer-btn" onclick="startCountdown ()"><img src="images/play-icon.png" class="icon"></button>
+        <button class="timer-btn" onclick="stopCountdown ()"><img src="images/pause-icon.png" class="icon"></button>
+        <button class="timer-btn" onclick="resetCountdown ()"><img src="images/restart-icon.png" class="icon"></button>
+    </div>
+    <div>
+        <button id="new-game-btn" onclick="startNewGame ()">NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
